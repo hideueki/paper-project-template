@@ -1,0 +1,88 @@
+# Paper Project Template - Requirements
+# =====================================
+#
+# Install: pip install -r requirements.txt
+#
+# Note: Versions are not pinned for flexibility.
+# For reproducibility, create requirements_frozen.txt:
+#   pip freeze > requirements_frozen.txt
+
+# =============================================================================
+# Core - Data Processing & Analysis
+# =============================================================================
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+
+# =============================================================================
+# Visualization
+# =============================================================================
+matplotlib>=3.7
+seaborn>=0.12
+
+# =============================================================================
+# Machine Learning & Statistics
+# =============================================================================
+scikit-learn>=1.2
+statsmodels>=0.14
+
+# =============================================================================
+# Survival Analysis (Clinical Research)
+# =============================================================================
+lifelines>=0.27
+
+# =============================================================================
+# Table Generation
+# =============================================================================
+tableone>=0.8
+
+# =============================================================================
+# File I/O
+# =============================================================================
+openpyxl>=3.1          # Excel read/write
+pyarrow>=12.0          # Parquet support
+Pillow>=9.0            # Image processing (resolution check)
+
+# =============================================================================
+# Code Quality (Optional but Recommended)
+# =============================================================================
+# black                 # Code formatter
+# flake8                # Linter
+# mypy                  # Type checker
+
+# =============================================================================
+# Jupyter Support (Optional)
+# =============================================================================
+# jupyter
+# jupyterlab
+# ipykernel
+
+# =============================================================================
+# Deep Learning (Install as needed)
+# =============================================================================
+# Uncomment based on your project needs:
+
+# PyTorch
+# torch>=2.0
+# torchvision>=0.15
+
+# TensorFlow/Keras
+# tensorflow>=2.12
+
+# Image Processing (for medical imaging)
+# scikit-image>=0.21
+# opencv-python>=4.8
+
+# =============================================================================
+# Additional Tools (Install as needed)
+# =============================================================================
+# shap                  # Model interpretability
+# imbalanced-learn      # Handling imbalanced datasets
+# xgboost               # Gradient boosting
+# lightgbm              # Light gradient boosting
+
+# =============================================================================
+# Documentation
+# =============================================================================
+# sphinx                # Documentation generator
+# sphinx-rtd-theme      # ReadTheDocs theme

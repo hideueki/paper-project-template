@@ -1,0 +1,4 @@
+﻿Risk_Group,Score_Range,n,Median_OS_months
+Favorable,0-2,234,64.0
+Intermediate,3-4,122,39.0
+Poor,≥5,90,12.0

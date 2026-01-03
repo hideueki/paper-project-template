@@ -1,0 +1,10 @@
+Risk Group,Treatment,N,Median OS (mo),2-year OS (%)
+Favorable,IO+Axi,42,NR,87.1
+Favorable,IO+MKI,123,NR,89.4
+Favorable,IO-IO,62,57.0,77.1
+Intermediate,IO+Axi,26,52.0,72.6
+Intermediate,IO+MKI,66,31.0,61.0
+Intermediate,IO-IO,35,39.0,70.0
+Poor,IO+Axi,14,21.0,32.6
+Poor,IO+MKI,45,10.0,13.7
+Poor,IO-IO,33,15.0,34.5

@@ -1,0 +1,4 @@
+Risk Group,n,Events,Median OS (months),HR vs Favorable (95% CI)
+Favorable (0-2),234,52,64.0,Reference
+Intermediate (3-4),122,52,39.0,2.09 (1.42-3.07)
+Poor (≥5),90,63,12.0,5.48 (3.78-7.94)

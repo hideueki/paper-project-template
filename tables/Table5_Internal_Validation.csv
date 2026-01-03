@@ -1,0 +1,4 @@
+Method,C-index,Note
+Apparent (training),0.741,
+5-fold cross-validation,0.742 ± 0.033,
+Optimism-corrected (bootstrap),0.741,Optimism: -0.000

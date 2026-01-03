@@ -1,0 +1,8 @@
+﻿Component,Points,n,Percentage
+KPS < 80,1,63,14.1
+Time to treatment < 1 year,1,302,67.7
+Anemia (Hb < LLN),1,256,57.4
+LDH > 250 U/L,1,73,16.4
+mGPS 1,1,77,17.3
+mGPS 2,2,118,26.5
+≥2 metastatic sites,1,178,39.9

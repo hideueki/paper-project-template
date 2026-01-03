@@ -1,3 +1,5 @@
+Table 2. Components of the IO-Era Prognostic Score,,,
+,,,
 Factor,Points,n (%),HR (95% CI)
 KPS < 80,1,63 (14%),3.09 (2.17–4.41)
 Time to treatment < 1 year,1,302 (68%),2.34 (1.57–3.50)
@@ -11,11 +13,6 @@ Notes:,,,
 Total score range: 0–8 points.,,,
 HRs from multivariable Cox regression adjusting for all factors.,,,
 ,,,
-Abbreviations:,,,
-HR = hazard ratio,,,
-CI = confidence interval,,,
-KPS = Karnofsky Performance Status,,,
-Hb = hemoglobin,,,
-LLN = lower limit of normal,,,
-LDH = lactate dehydrogenase,,,
-mGPS = modified Glasgow Prognostic Score,,,
+Abbreviations: HR = hazard ratio; CI = confidence interval; KPS = Karnofsky Performance Status; Hb = hemoglobin; LLN = lower limit of normal; LDH = lactate dehydrogenase; mGPS = modified Glasgow Prognostic Score.,,,
+,,,
+mGPS scoring: 0 = CRP ≤10 mg/L and albumin ≥35 g/L; 1 = CRP >10 mg/L or albumin <35 g/L; 2 = CRP >10 mg/L and albumin <35 g/L.,,,

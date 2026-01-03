@@ -1,3 +1,5 @@
+Supplementary Table 1. Overall Survival by IO-Era Risk Group and Treatment Regimen,,,,
+,,,,
 Risk Group,Treatment,N,Median OS (mo),2-year OS (%)
 Favorable,IO+Axi,42,NR,87.1
 Favorable,IO+MKI,123,NR,89.4
@@ -11,13 +13,8 @@ Poor,IO-IO,33,15.0,34.5
 ,,,,
 Notes:,,,,
 Risk groups by IO-Era Score: Favorable (0–2) / Intermediate (3–4) / Poor (≥5).,,,,
-NR = not reached during follow-up.,,,,
+NR = not reached during follow-up period.,,,,
 ,,,,
-Abbreviations:,,,,
-OS = overall survival,,,,
-IO = immune checkpoint inhibitor,,,,
-Axi = axitinib,,,,
-MKI = multi-kinase inhibitor,,,,
-IO+Axi: pembrolizumab plus axitinib,,,,
-IO+MKI: nivolumab plus cabozantinib or pembrolizumab plus lenvatinib,,,,
-IO-IO: nivolumab plus ipilimumab,,,,
+Abbreviations: OS = overall survival; IO = immune checkpoint inhibitor; Axi = axitinib; MKI = multi-kinase inhibitor.,,,,
+,,,,
+IO+Axi: pembrolizumab plus axitinib. IO+MKI: nivolumab plus cabozantinib or pembrolizumab plus lenvatinib. IO-IO: nivolumab plus ipilimumab.,,,,

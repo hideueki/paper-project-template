@@ -1,14 +1,13 @@
+Table 3. Overall Survival by IO-Era Risk Group,,,,
+,,,,
 Risk Group,n,Events,Median OS (months),HR vs Favorable (95% CI)
 Favorable (0–2),234,52,64.0,Reference
 Intermediate (3–4),122,52,39.0,2.09 (1.42–3.07)
 Poor (≥5),90,63,12.0,5.48 (3.78–7.94)
 ,,,,
 Notes:,,,,
-Risk groups: Favorable (0–2) / Intermediate (3–4) / Poor (≥5 points).,,,,
+Risk groups defined by total IO-Era Score: Favorable (0–2 points) / Intermediate (3–4 points) / Poor (≥5 points).,,,,
 Median OS estimated by Kaplan-Meier method.,,,,
-HRs from Cox regression with Favorable as reference.,,,,
+HRs from Cox proportional hazards regression with Favorable group as reference.,,,,
 ,,,,
-Abbreviations:,,,,
-OS = overall survival,,,,
-HR = hazard ratio,,,,
-CI = confidence interval,,,,
+Abbreviations: OS = overall survival; HR = hazard ratio; CI = confidence interval.,,,,

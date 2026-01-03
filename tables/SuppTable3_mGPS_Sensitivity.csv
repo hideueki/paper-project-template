@@ -1,10 +1,13 @@
+Supplementary Table 3. Sensitivity Analysis for mGPS Scoring,
+,
 Weighting,C-index
 Original (0/1/2),0.746
 Binary (0/≥1),0.740
 ,
 Notes:,
-Comparison of mGPS scoring approaches.,
-Original weighting retained for superior discrimination.,
+Comparison of original mGPS weighting (0/1/2 points) versus binary classification.,
+Original weighting retained in final model for superior discrimination.,
 ,
-Abbreviations:,
-mGPS = modified Glasgow Prognostic Score,
+Abbreviations: mGPS = modified Glasgow Prognostic Score.,
+,
+mGPS scoring: 0 = CRP ≤10 mg/L and albumin ≥35 g/L; 1 = CRP >10 mg/L or albumin <35 g/L; 2 = CRP >10 mg/L and albumin <35 g/L.,

@@ -1,12 +1,14 @@
+Table 4. Discrimination Performance Comparison (C-index),,,
+,,,
 Cohort,IO-Era Score,IMDC,Meet-URO
 Overall (n=446),0.740 (0.698–0.775),0.700 (0.659–0.740),0.691 (0.650–0.735)
 IO-IO (n=130),0.671 (0.599–0.729),0.635 (0.564–0.697),0.645 (0.576–0.710)
 IO-TKI (n=316),0.774 (0.719–0.820),0.725 (0.671–0.779),0.715 (0.658–0.771)
 ,,,
 Notes:,,,
-"Values represent C-index (95% CI) for overall survival prediction.",,,
-"95% CIs calculated using 1000 bootstrap resamples.",,,
-"Abbreviations:",,,
-"IMDC = International Metastatic Renal Cell Carcinoma Database Consortium;",,,
-"Meet-URO = Meet-URO prognostic model; IO = immune checkpoint inhibitor; TKI = tyrosine kinase inhibitor.",,,
-"IO-IO includes nivolumab plus ipilimumab; IO-TKI includes pembrolizumab plus axitinib, nivolumab plus cabozantinib, and pembrolizumab plus lenvatinib.",,,
+Values represent C-index (95% CI) for overall survival prediction.,,,
+95% CIs calculated using 1000 bootstrap resamples.,,,
+,,,
+Abbreviations: IMDC = International Metastatic Renal Cell Carcinoma Database Consortium; Meet-URO = Meet-URO prognostic model; IO = immune checkpoint inhibitor; TKI = tyrosine kinase inhibitor.,,,
+,,,
+IO-IO: nivolumab plus ipilimumab. IO-TKI: pembrolizumab plus axitinib / nivolumab plus cabozantinib / pembrolizumab plus lenvatinib.,,,

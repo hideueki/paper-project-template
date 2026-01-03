@@ -1,3 +1,5 @@
+Supplementary Table 2. Sensitivity Analysis for LDH Threshold Selection,,
+,,
 Threshold,n (%),C-index
 >200 U/L,150 (33.3%),0.747
 >225 U/L,101 (22.4%),0.748
@@ -6,8 +8,7 @@ Threshold,n (%),C-index
 >300 U/L,43 (9.6%),0.745
 ,,
 Notes:,,
-Sensitivity analysis for LDH threshold selection.,,
->250 U/L selected based on prior literature.,,
+Sensitivity analysis evaluating different LDH thresholds for model performance.,,
+>250 U/L selected based on prior literature and clinical interpretability.,,
 ,,
-Abbreviations:,,
-LDH = lactate dehydrogenase,,
+Abbreviations: LDH = lactate dehydrogenase.,,

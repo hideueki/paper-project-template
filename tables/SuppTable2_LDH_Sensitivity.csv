@@ -4,3 +4,10 @@ Threshold,n (%),C-index
 >250 U/L,74 (16.4%),0.746
 >275 U/L,57 (12.7%),0.743
 >300 U/L,43 (9.6%),0.745
+,,
+Notes:,,
+Sensitivity analysis for LDH threshold selection.,,
+>250 U/L selected based on prior literature.,,
+,,
+Abbreviations:,,
+LDH = lactate dehydrogenase,,

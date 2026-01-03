@@ -1,8 +1,21 @@
 Factor,Points,n (%),HR (95% CI)
-KPS < 80,1,63 (14%),3.09 (2.17-4.41)
-Time to treatment < 1 year,1,302 (68%),2.34 (1.57-3.50)
-Anemia (Hb < LLN),1,256 (57%),2.18 (1.56-3.06)
-LDH > 250 U/L,1,73 (16%),2.30 (1.60-3.30)
-mGPS = 1,1,77 (17%),1.33 (0.91-1.93)
-mGPS = 2,2,118 (26%),2.96 (2.18-4.02)
-≥2 metastatic sites,1,178 (40%),2.25 (1.66-3.06)
+KPS < 80,1,63 (14%),3.09 (2.17–4.41)
+Time to treatment < 1 year,1,302 (68%),2.34 (1.57–3.50)
+Anemia (Hb < LLN),1,256 (57%),2.18 (1.56–3.06)
+LDH > 250 U/L,1,73 (16%),2.30 (1.60–3.30)
+mGPS = 1,1,77 (17%),1.33 (0.91–1.93)
+mGPS = 2,2,118 (26%),2.96 (2.18–4.02)
+≥2 metastatic sites,1,178 (40%),2.25 (1.66–3.06)
+,,,
+Notes:,,,
+Total score range: 0–8 points.,,,
+HRs from multivariable Cox regression adjusting for all factors.,,,
+,,,
+Abbreviations:,,,
+HR = hazard ratio,,,
+CI = confidence interval,,,
+KPS = Karnofsky Performance Status,,,
+Hb = hemoglobin,,,
+LLN = lower limit of normal,,,
+LDH = lactate dehydrogenase,,,
+mGPS = modified Glasgow Prognostic Score,,,

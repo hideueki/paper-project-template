@@ -2,3 +2,8 @@ Threshold,n (%),C-index
 ≥1 sites,401 (89.1%),0.735
 ≥2 sites,182 (40.4%),0.746
 ≥3 sites,66 (14.7%),0.742
+,,
+Notes:,,
+Sensitivity analysis for metastatic site threshold.,,
+≥2 sites selected for optimal discrimination.,,
+Sites: lung / liver / bone / brain / lymph node.,,

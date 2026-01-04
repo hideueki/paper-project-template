@@ -45,13 +45,15 @@ A novel prognostic model incorporating inflammation markers and metastatic burde
 
 ## 1. INTRODUCTION
 
-The International Metastatic RCC Database Consortium (IMDC) model has served as the standard prognostic tool for metastatic renal cell carcinoma (mRCC) [3,4]. However, with the approval of ICI-based combination therapies—including nivolumab plus ipilimumab [5], pembrolizumab plus axitinib [6], pembrolizumab plus lenvatinib [7], nivolumab plus cabozantinib [8], and avelumab plus axitinib [9]—the IMDC model has shown reduced performance. In CheckMate-214, IMDC achieved a C-index of only 0.63 [12], compared with 0.73 originally [3].
+Metastatic renal cell carcinoma (mRCC) is a heterogeneous disease with variable clinical outcomes. The International Metastatic RCC Database Consortium (IMDC) model, developed by Heng et al. in 2009, has served as the standard prognostic tool for mRCC patients receiving VEGF-targeted therapy [3]. The IMDC model incorporates six clinical and laboratory parameters—Karnofsky Performance Status (KPS) <80%, time from diagnosis to treatment <1 year, anemia, neutrophilia, thrombocytosis, and hypercalcemia—to classify patients into favorable, intermediate, and poor risk groups [4].
 
-Several groups have proposed modifications. The Meet-URO score incorporates neutrophil-to-lymphocyte ratio (NLR) and bone metastases [13]. IMmotion151 demonstrated that modified Glasgow Prognostic Score (mGPS) added prognostic value beyond IMDC [14]. The biological rationale is compelling: systemic inflammation indicates an immunosuppressive microenvironment that may attenuate ICI efficacy [17,18].
+The treatment landscape of mRCC has dramatically changed with the approval of ICI-based combination therapies. The CheckMate-214 trial established nivolumab plus ipilimumab as the standard of care for IMDC intermediate- and poor-risk patients [5]. Subsequently, multiple phase III trials demonstrated the efficacy of ICI plus tyrosine kinase inhibitor (TKI) combinations, including pembrolizumab plus axitinib [6], pembrolizumab plus lenvatinib [7], nivolumab plus cabozantinib [8], and avelumab plus axitinib [9]. Current guidelines recommend ICI-based combination therapy as first-line treatment for most mRCC patients [10,11].
 
-A key limitation of IMDC is that 63% of patients fall into the heterogeneous intermediate-risk category. Sella et al. demonstrated significant survival differences between patients with one versus two IMDC factors [23], highlighting the need for improved stratification.
+Several studies have reported suboptimal performance of the IMDC model in patients receiving ICI-based therapy. In CheckMate-214, IMDC achieved a C-index of only 0.63 in the nivolumab plus ipilimumab arm [12], substantially lower than the originally reported value of 0.73 [3]. The Meet-URO score was developed to address IMDC limitations by incorporating neutrophil-to-lymphocyte ratio (NLR) and bone metastases [13]. The IMmotion151 trial demonstrated that the modified Glasgow Prognostic Score (mGPS), a composite marker of systemic inflammation, added prognostic value beyond IMDC [14]. The biological rationale for incorporating inflammation-based markers is compelling: systemic inflammation indicates an immunosuppressive tumor microenvironment that may attenuate ICI efficacy [17,18].
 
-We developed and validated a novel prognostic model for mRCC patients receiving first-line ICI-based combination therapy, incorporating inflammation-based markers and metastatic burden.
+A key limitation of IMDC is that approximately 63% of patients fall into the heterogeneous intermediate-risk category. Sella et al. demonstrated significant survival differences between patients with one versus two IMDC factors (median OS 27.8 vs 15.0 months), highlighting the need for improved stratification within this subgroup [23].
+
+We developed and internally validated a novel prognostic model specifically designed for mRCC patients receiving first-line ICI-based combination therapy, incorporating inflammation-based markers and metastatic burden.
 
 ---
 
@@ -59,23 +61,27 @@ We developed and validated a novel prognostic model for mRCC patients receiving 
 
 ### 2.1. Study Design and Patients
 
-This retrospective multicenter study included mRCC patients who received first-line ICI-based combination therapy (August 2018–September 2025) at 21 Japanese centers. Eligible patients had histologically confirmed RCC with measurable metastatic disease. Patients with incomplete baseline laboratory data were excluded. The study adhered to TRIPOD guidelines [25] and was approved by the institutional review board of Kobe University Hospital.
+This retrospective multicenter cohort study included patients with mRCC who received first-line ICI-based combination therapy between August 2018 and September 2025 at Kobe University Hospital and 20 affiliated institutions (21 centers total). Eligible patients were aged ≥18 years with histologically confirmed RCC and measurable metastatic disease according to RECIST version 1.1. Patients were excluded if they had incomplete baseline laboratory data required for risk score calculation or were lost to follow-up within 30 days of treatment initiation. The study adhered to TRIPOD guidelines [25] and was approved by the institutional review board of Kobe University Hospital.
 
-Treatment regimens included IO-IO (nivolumab plus ipilimumab) and IO-TKI (pembrolizumab plus axitinib, pembrolizumab plus lenvatinib, nivolumab plus cabozantinib, or avelumab plus axitinib). IO-IO was not approved for IMDC favorable-risk disease in Japan [5].
+Treatment regimens were classified into ICI-ICI combination (IO-IO: nivolumab plus ipilimumab) and ICI-TKI combination (IO-TKI: pembrolizumab plus axitinib, pembrolizumab plus lenvatinib, nivolumab plus cabozantinib, or avelumab plus axitinib). IO-IO was not approved for IMDC favorable-risk disease in Japan during the study period, consistent with CheckMate-214 results [5].
 
 ### 2.2. Data Collection and Outcomes
 
-Clinical data included demographics, KPS, histology, sites of metastatic disease, and baseline laboratory values. The mGPS was calculated as: 0 (CRP ≤10 mg/L), 1 (CRP >10 mg/L and albumin ≥35 g/L), or 2 (CRP >10 mg/L and albumin <35 g/L) [28].
+Clinical data were extracted from electronic medical records and included demographics, performance status (converted to KPS), histological subtype, sarcomatoid features, sites of metastatic disease, and laboratory values at baseline (within 30 days before treatment). Laboratory parameters included hemoglobin, neutrophil count, platelet count, corrected calcium, lactate dehydrogenase (LDH), C-reactive protein (CRP), and albumin. The mGPS was calculated as: 0 (CRP ≤10 mg/L), 1 (CRP >10 mg/L and albumin ≥35 g/L), or 2 (CRP >10 mg/L and albumin <35 g/L) [28].
 
-The primary endpoint was overall survival (OS). Secondary endpoints included comparison with IMDC and Meet-URO models, and reclassification analysis.
+The primary endpoint was overall survival (OS), defined as time from treatment initiation to death from any cause. Secondary endpoints included comparison of prognostic discrimination between the proposed model and existing models (IMDC and Meet-URO), and reclassification analysis within IMDC risk groups.
 
 ### 2.3. Model Development
 
-LASSO Cox regression was used for variable selection to avoid overfitting [29]. Candidate factors included IMDC criteria plus mGPS, NLR, and metastatic burden. Selected variables were assigned integer points based on regression coefficients. Thresholds were based on prior literature: LDH >250 U/L [30] and ≥2 metastatic sites [31]. Sensitivity analyses examined alternative thresholds.
+Candidate prognostic factors included all six IMDC criteria plus additional factors: mGPS, NLR, number of metastatic sites, and specific metastatic locations. To avoid overfitting and selection bias inherent to stepwise methods, we employed LASSO Cox regression for variable selection [29]. The optimal regularization parameter was determined by 10-fold cross-validation.
+
+Selected variables were assigned integer point values based on regression coefficients. Thresholds for continuous variables were based on prior literature rather than data-driven optimization: LDH >250 U/L consistent with the MSKCC model [30], and ≥2 metastatic sites based on the distinction between oligometastatic and polymetastatic disease [31]. Sensitivity analyses examined alternative thresholds for LDH (>200, >225, >275, >300 U/L), metastatic sites (≥1, ≥3), and mGPS (binary vs ordinal scoring).
 
 ### 2.4. Statistical Analysis
 
-Model discrimination was evaluated using C-index with bootstrap 95% CI (1000 iterations) and compared using Pencina's method [33]. Internal validation used bootstrap (500 iterations) and 5-fold cross-validation. Calibration was assessed at 2 years, consistent with major ICI trial endpoints [5–9], using calibration slope, intercept, and integrated calibration index.
+Baseline characteristics were summarized using median (IQR) for continuous variables and frequency (percentage) for categorical variables. Standardized mean differences (SMD) were calculated to assess covariate balance between treatment groups [32].
+
+Model discrimination was evaluated using Harrell's C-index with 95% CI calculated by bootstrap resampling (1000 iterations). The proposed model was compared with IMDC and Meet-URO using Pencina's method [33]. Internal validation was performed using optimism-corrected bootstrap validation (500 iterations) and 5-fold cross-validation. Model calibration was assessed at 2 years using calibration slope, intercept, and integrated calibration index (ICI). The 2-year timepoint was selected for consistency with major ICI combination trial endpoints [5–9]. All analyses were performed using Python 3.11.
 
 ---
 
@@ -83,39 +89,80 @@ Model discrimination was evaluated using C-index with bootstrap 95% CI (1000 ite
 
 ### 3.1. Patient Characteristics
 
-A total of 446 patients were included: 130 (29%) received IO-IO and 316 (71%) received IO-TKI (Table 1). Median age was 70 years; 77% were male. By IMDC, 77 (17%) were favorable, 281 (63%) intermediate, and 88 (20%) poor risk. No IMDC favorable-risk patients received IO-IO. At median follow-up of 18 months, 167 patients (37%) had died.
+A total of 446 patients met the inclusion criteria, of whom 130 (29%) received IO-IO and 316 (71%) received IO-TKI combination therapy (Table 1). The median age was 70 years (IQR, 62–75), and 342 patients (77%) were male. Clear cell histology was present in 360 patients (81%), and sarcomatoid features were identified in 34 patients (8%).
+
+According to IMDC criteria, 77 patients (17%) were classified as favorable risk, 281 (63%) as intermediate risk, and 88 (20%) as poor risk. Consistent with treatment guidelines, no IMDC favorable-risk patients received IO-IO combination; all 130 IO-IO recipients had intermediate (n=100, 77%) or poor (n=30, 23%) IMDC risk. Patients receiving IO-IO had higher prevalence of time from diagnosis to treatment <1 year (83% vs 61%, SMD 0.50) and ≥2 metastatic sites (49% vs 36%, SMD 0.27) compared with IO-TKI.
+
+At median follow-up of 18 months (IQR, 8–34), 167 patients (37%) had died. Median follow-up was longer in the IO-IO group (28 months) compared with IO-TKI (16 months).
 
 ### 3.2. Model Components
 
-LASSO regression identified six factors (Table 2, Fig. 1): KPS <80 (1 point), time to treatment <1 year (1 point), anemia (1 point), LDH >250 U/L (1 point), mGPS (1–2 points), and ≥2 metastatic sites (1 point). Notably, neutrophilia and thrombocytosis were not selected.
+LASSO Cox regression with 10-fold cross-validation identified six factors independently associated with OS (Table 2, Fig. 1). Notably, two IMDC factors—neutrophilia and thrombocytosis—were not selected, while three novel factors—elevated LDH, mGPS, and metastatic burden—were incorporated. The proposed model comprises:
 
-### 3.3. Prognostic Performance
+- KPS <80 (1 point): present in 63 patients (14%)
+- Time from diagnosis to treatment <1 year (1 point): present in 302 patients (68%)
+- Anemia (hemoglobin below lower limit of normal; 1 point): present in 256 patients (57%)
+- Elevated LDH (>250 U/L; 1 point): present in 73 patients (16%)
+- mGPS (mGPS 1 = 1 point; mGPS 2 = 2 points): mGPS 1 in 77 patients (17%), mGPS 2 in 118 patients (26%)
+- ≥2 metastatic sites (1 point): present in 178 patients (40%)
 
-The model stratified patients into favorable (52%), intermediate (27%), and poor (20%) risk (Fig. 2A). Median OS was 64, 39, and 12 months, respectively (p<0.0001). Two-year OS rates were 78%, 66%, and 26%.
+The total score ranges from 0 to 8 points.
+
+### 3.3. Prognostic Performance by Risk Group
+
+Based on the proposed model, 234 patients (52%) were classified as favorable risk (0–2 points), 122 (27%) as intermediate risk (3–4 points), and 90 (20%) as poor risk (≥5 points) (Supplementary Table 1, Fig. 2A).
+
+The three risk groups demonstrated significantly different survival outcomes (log-rank p<0.0001). Median OS was 64.0 months (95% CI, 51.2–NR) in the favorable-risk group, 39.0 months (95% CI, 28.4–52.1) in the intermediate-risk group, and 12.0 months (95% CI, 9.1–16.8) in the poor-risk group. Two-year OS rates were 78.2%, 65.8%, and 25.6% for favorable, intermediate, and poor risk groups, respectively. Compared with favorable risk, HR for death was 2.09 (95% CI, 1.42–3.07) for intermediate and 5.48 (95% CI, 3.78–7.94) for poor risk.
+
+The prognostic value was consistent across treatment regimens (Supplementary Fig. 1). In IO-IO (n=130), median OS was 67, 32, and 11 months for favorable, intermediate, and poor risk, respectively. In IO-TKI (n=316), corresponding values were 62, 43, and 13 months.
 
 ### 3.4. Comparison with Existing Models
 
-The model demonstrated superior discrimination (C-index 0.740) versus IMDC (0.700; p=0.006) and Meet-URO (0.691; p=0.001) (Fig. 2B, Supplementary Table 2). Improvement was consistent across treatment subgroups.
+The proposed model demonstrated superior discrimination compared with both IMDC and Meet-URO (Supplementary Table 2, Fig. 2B). In the overall cohort, C-index was 0.740 (95% CI, 0.698–0.775) for the proposed model, 0.700 (95% CI, 0.659–0.740) for IMDC, and 0.691 (95% CI, 0.650–0.735) for Meet-URO.
+
+The proposed model significantly outperformed IMDC (ΔC-index 0.040; 95% CI, 0.012–0.068; p=0.006) and Meet-URO (ΔC-index 0.049; 95% CI, 0.019–0.079; p=0.001). Improvement was consistent in both treatment subgroups: IO-IO (0.671 vs 0.635 for IMDC) and IO-TKI (0.774 vs 0.725 for IMDC).
 
 ### 3.5. Internal Validation
 
-Bootstrap validation showed minimal overfitting (optimism −0.000). Cross-validation yielded C-index 0.742±0.033. Calibration was adequate: slope 0.86, intercept −0.01, ICI 0.065 (Fig. 2C).
+Internal validation confirmed model robustness (Supplementary Table 4). The apparent C-index was 0.741. Optimism-corrected C-index by bootstrap validation was 0.741 with negligible optimism (−0.000), indicating minimal overfitting. Five-fold cross-validation yielded mean C-index of 0.742 (SD, 0.033).
 
-### 3.6. Reclassification Analysis
+The calibration plot demonstrated good agreement between predicted and observed 2-year mortality (Fig. 2C). Quantitative metrics confirmed adequate calibration: slope 0.86, intercept −0.01, and ICI 0.065.
 
-Among 281 IMDC intermediate-risk patients, 56% were reclassified as favorable (median OS 68 mo), 27% as intermediate (41 mo), and 17% as poor (15 mo) (p<0.0001; Fig. 3A, 3B). Among 88 IMDC poor-risk patients, 30% were reclassified as intermediate (OS 24 mo) versus 68% remaining poor (10 mo) (Fig. 3C).
+### 3.6. Sensitivity Analyses
+
+Sensitivity analyses confirmed threshold robustness (Supplementary Tables 5–7). For LDH, C-indices ranged from 0.743 to 0.748 across thresholds (>200 to >300 U/L). For mGPS, ordinal scoring (0/1/2) achieved C-index 0.746 versus 0.740 for binary. For metastatic sites, ≥2 sites (0.746) outperformed ≥1 (0.735) and ≥3 (0.742).
+
+### 3.7. Reclassification of IMDC Risk Groups
+
+The proposed model provided substantial prognostic refinement within IMDC categories (Fig. 3). Among 281 IMDC intermediate-risk patients, 156 (56%) were reclassified as favorable (median OS 68.0 mo), 77 (27%) as intermediate (41.0 mo), and 48 (17%) as poor (15.0 mo) (log-rank p<0.0001; Fig. 3A, 3B). The model achieved C-index of 0.669 within this heterogeneous subgroup.
+
+Among 88 IMDC poor-risk patients, 26 (30%) were reclassified as intermediate (median OS 24.0 mo) compared with 60 (68%) remaining as poor (10.0 mo), representing a 2.4-fold survival difference (Fig. 3C).
 
 ---
 
 ## 4. DISCUSSION
 
-We developed a prognostic model for mRCC patients receiving first-line ICI-based therapy that demonstrated superior discrimination compared with IMDC and Meet-URO (C-index 0.740 vs 0.700 and 0.691).
+In this multicenter study of 446 patients from 21 centers in Japan, we developed and validated a novel prognostic model for mRCC patients receiving first-line ICI-based combination therapy. The proposed model demonstrated superior discrimination compared with IMDC and Meet-URO (C-index 0.740 vs 0.700 and 0.691), with improvement consistent across both IO-IO and IO-TKI subgroups. To our knowledge, this is the first prognostic model specifically developed for patients receiving contemporary ICI-based combination regimens in the first-line setting.
 
-The model differs from IMDC in excluding neutrophilia and thrombocytosis while incorporating LDH, mGPS, and metastatic burden. LDH was in the original MSKCC model [30] and predicts ICI response [35,36]. mGPS reflects tumor-associated inflammation that may attenuate ICI efficacy [14,17,18,20,21]. Metastatic burden (≥2 sites) captures disease extent [37–39].
+The IMDC model was developed in 2009 using data from patients treated with VEGF-targeted therapy [3]. Our finding that IMDC achieved a C-index of 0.700 is consistent with prior reports of reduced performance in the ICI era: CheckMate-214 demonstrated a C-index of 0.63 [12], and similar reductions have been observed in other cohorts [13,14]. This decline likely reflects fundamentally different biological mechanisms underlying response to ICI versus VEGF-targeted therapy. While VEGF inhibitors primarily target tumor angiogenesis, ICIs restore antitumor immunity by blocking inhibitory checkpoints, making tumor-immune interactions the primary determinant of treatment efficacy.
 
-Importantly, the model meaningfully reclassifies IMDC intermediate-risk patients (63% of cohort) into three groups with median OS ranging from 15 to 68 months—a 4.5-fold difference. This enables more precise prognostic counseling. The model is intended for prognostication, not treatment selection; treatment decisions should follow IMDC per guidelines [10,11].
+The Meet-URO score was developed to address IMDC limitations by incorporating NLR and bone metastases [13], and has been validated in patients receiving cabozantinib [34]. However, in our first-line ICI combination cohort, Meet-URO (C-index 0.691) did not outperform IMDC (0.700), possibly reflecting population differences as Meet-URO was derived from second-line nivolumab monotherapy patients. Recent IMDC consortium data reported that IMDC retained prognostic utility in contemporary first-line combinations [16], consistent with our findings. However, our results demonstrate that further improvement is achievable through incorporation of inflammation-based markers and metastatic burden.
 
-Strengths include multicenter design, LASSO regression, and comprehensive validation. Limitations include retrospective design, lack of external validation, and unavailability of molecular biomarkers [22,40]. External validation is essential.
+The proposed model differs from IMDC in several key aspects that reflect the unique biology of ICI-based therapy. First, it excludes neutrophilia and thrombocytosis, which were not independently prognostic in our LASSO analysis. This finding may reflect their primary association with VEGF-driven tumor biology rather than immune-mediated mechanisms [3]. Notably, these factors were originally identified in patients receiving cytokine or VEGF-targeted therapy, and their prognostic significance may diminish when treatment efficacy depends on host antitumor immunity.
+
+Second, elevated LDH (>250 U/L) was incorporated, consistent with the original MSKCC model [30] but excluded from IMDC. LDH elevation reflects high tumor burden and glycolytic metabolism, both of which have been associated with an immunosuppressive tumor microenvironment. Meta-analyses confirm LDH association with inferior OS in RCC (pooled HR 2.13) [35], and LDH independently predicts response to nivolumab in mRCC [36]. Our sensitivity analyses demonstrated stable C-indices across thresholds from 200 to 300 U/L, supporting the robustness of this component.
+
+Third, the mGPS emerged as a key prognostic factor. This inflammation-based score, comprising CRP and albumin, is validated across multiple cancer types [20,21] and reflects the systemic inflammatory response to malignancy. Elevated CRP indicates activation of pro-inflammatory pathways that promote an immunosuppressive microenvironment through recruitment of myeloid-derived suppressor cells and regulatory T cells [17,18]. In IMmotion151, mGPS improved prognostic accuracy beyond IMDC in patients receiving atezolizumab plus bevacizumab [14]. Our finding that ordinal scoring (0/1/2) outperformed binary classification (C-index 0.746 vs 0.740) supports retention of the graded mGPS classification, allowing capture of the dose-response relationship between inflammation severity and prognosis.
+
+Finally, metastatic burden (≥2 sites) was incorporated to capture disease extent. Multiple studies have demonstrated that metastatic burden independently predicts outcomes in ICI-treated patients [37–39]. The ≥2 sites threshold provided optimal discrimination while reflecting the clinically meaningful distinction between oligometastatic and polymetastatic disease states.
+
+A key clinical advantage of the proposed model is the meaningful reclassification of IMDC intermediate-risk patients, who comprise 63% of the cohort. This heterogeneous population has long been recognized as problematic for clinical decision-making [23,24]. The proposed model stratifies these patients into three distinct groups with median OS ranging from 15 to 68 months—a 4.5-fold difference representing clinically meaningful prognostic separation. This reclassification enables more precise prognostic counseling for the majority of mRCC patients and may inform shared decision-making regarding treatment intensity and goals of care.
+
+Importantly, the proposed model is intended for prognostication, not treatment selection. Treatment decisions should follow IMDC per current guidelines [10,11], as regulatory approvals for ICI combinations are IMDC-based. The proposed model complements IMDC by providing refined prognostic information within each IMDC category, allowing clinicians to better individualize discussions with patients regarding expected outcomes.
+
+Strengths of this study include multicenter design (21 institutions) ensuring generalizability within Japan, use of LASSO regression minimizing overfitting and selection bias, comprehensive internal validation using both bootstrap and cross-validation, head-to-head comparison with established prognostic models, and extensive sensitivity analyses confirming robustness of threshold selections. All model components are routinely available clinical and laboratory parameters, facilitating implementation in daily practice.
+
+Limitations warrant consideration. First, the retrospective design introduces potential selection and information biases. Second, absence of IMDC favorable-risk patients in the IO-IO cohort reflects Japanese regulatory guidelines and limits generalizability to this population. Third, the study lacks external validation; prospective validation in international cohorts is essential before clinical implementation. Fourth, molecular biomarkers that may further refine prognostication, such as tumor mutational burden or gene expression signatures, were unavailable [22,40]. Fifth, the LDH threshold was based on absolute values rather than upper limit of normal ratios, which may affect applicability across institutions with different reference ranges.
 
 ---
 
